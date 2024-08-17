@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false);        // Manage the loading state for the API call
   const [error, setError] = useState(null);             // Store any error messages from the API
 
-  const API_KEY = process.env.key;  // Replace with your actual OMDb API key
+  const API_KEY = process.env.REACT_APP_key;  // Replace with your actual OMDb API key
 
   // Function to add a movie to the favourites list
   const addToFavourites = (movie) => {
